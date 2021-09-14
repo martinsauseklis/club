@@ -6,6 +6,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles.css" type="text/css">
+        
     </head>
     <body>
         <header>
@@ -22,13 +23,67 @@
             </nav>
         </header>
         <main>
-            <h1>Esi sveicināts galda tenisa amatieru klubā!</h1>
+            <div id="bckgr-h1">
+                <h1>Esi sveicināts galda tenisa amatieru klubā!</h1>
+            </div>
+            
             <section id="turniri">
                 <h2>Tuvākie turnīri</h2>
+                <table id="turniru-tab">
+                    <thead>
+                        <tr>
+                            <th>Datums un laiks</th>
+                            <th>Norises vieta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>18.09.21, 18.00</td>
+                            <td>Ozolnieku Tautas nams</td>
+                        </tr>
+                        <tr>
+                            <td>18.09.21, 18.00</td>
+                            <td>Ozolnieku Tautas nams</td>
+                        </tr>
+                        <tr>
+                            <td>18.09.21, 18.00</td>
+                            <td>Ozolnieku Tautas nams</td>
+                        </tr>
+                        <tr>
+                            <td>18.09.21, 18.00</td>
+                            <td>Ozolnieku Tautas nams</td>
+                        </tr>
+                        <tr>
+                            <td>18.09.21, 18.00</td>
+                            <td>Ozolnieku Tautas nams</td>
+                        </tr>
+                        <tr>
+                            <td>18.09.21, 18.00</td>
+                            <td>Ozolnieku Tautas nams</td>
+                        </tr>
+                        <tr>
+                            <td>18.09.21, 18.00</td>
+                            <td>Ozolnieku Tautas nams</td>
+                        </tr>
+                        <tr>
+                            <td>18.09.21, 18.00</td>
+                            <td>Ozolnieku Tautas nams</td>
+                        </tr>
+                        <tr>
+                            <td>18.09.21, 18.00</td>
+                            <td>Ozolnieku Tautas nams</td>
+                        </tr>
+                        <tr>
+                            <td>18.09.21, 18.00</td>
+                            <td>Ozolnieku Tautas nams</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
             <section id="tryout">
                 <h2>Izmēģini galda tenisu</h2>
                 <p>Ja vēl nekad neesi spēlējis, iespējams tevi varētu interesēt ievadturnīri mūsu pieredzējušāko biedru paspārnē. Iemācīsim tev pamatlietas, kas nepieciešamas, lai sāktu spēlēt.</p>
+                <div id="map"></div>
             </section>
             <section id="gallery">
                 <h2>Galerijas</h2>
@@ -55,7 +110,10 @@
                 </div>
             </footer>
         </main>
-        
+        <script src="./index.js"></script>
+        <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfddXJnAZzvR1WhvD3njc_IeV5SBFKk-k&callback=initMap">
+</script>
     </body>
 </html>
 
