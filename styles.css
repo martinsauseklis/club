@@ -27,7 +27,7 @@ main {
 }
 
 header, main #bckgr-h1, #turniri, #tryout, #gallery, main footer {
-    border: 1px solid red;
+    /*border: 1px solid red; */
 }
 
 header {
@@ -247,6 +247,52 @@ h2 {
 
 main footer {
     grid-area: 8/1/9/13;
+    background-color: black;
+    color: white;
+    font-size:smaller;
+
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+}
+
+footer div {
+    padding-top: 1%;
+    align-self: center;
+    
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    padding: 1% 0;
+    align-items: center;
+    column-gap: 1%;
+}
+
+footer li {
+    list-style: none;
+    width: fit-content;
+}
+
+footer li a {
+    padding: 0 10px;
+    white-space: nowrap;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer li a:hover {
+    background-color:#ffb700 ;
 }
 
 #map {
