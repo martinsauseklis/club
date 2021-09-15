@@ -13,3 +13,13 @@ function initMap() {
       map: map,
     });
   }
+
+  const changePic = (str) => {
+    const mainEl = document.getElementById("main-pic")
+    mainEl.innerHTML = `<img src="${str}">`
+  }
+
+  const changePic2 = (str) => {
+    const mainEl = document.getElementById("main-pic2")
+    mainEl.innerHTML = `<img src="${str}">`
+  }

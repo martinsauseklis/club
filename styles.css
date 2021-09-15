@@ -19,6 +19,16 @@ body {
     grid-auto-flow: row;
     
 }
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 30vh);
+    grid-auto-rows: 1fr;
+}
+
+header, main #bckgr-h1, #turniri, #tryout, #gallery, main footer {
+    border: 1px solid red;
+}
 
 header {
     grid-area: 1/1/2/13;
@@ -31,7 +41,7 @@ header {
     left:0;
     right:0;
     top:0;
-
+    z-index: 10;
     
 }
 
@@ -47,10 +57,7 @@ header {
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-    
-     
-    
+    align-items: flex-end; 
 }
 
 #header-nav ul li {
@@ -71,9 +78,6 @@ header {
     width: 100%;
     height: 100%;
     padding-bottom: 1vh;
-
-   
-    
 }
 
 #img-container {
@@ -82,20 +86,11 @@ header {
 }
 
 #img-container img {
-
     height: 100%;
     object-fit: contain;
-   
 }
 
-main {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(10, fit-content);
-    grid-auto-rows: 1fr;
-    
-   
-}
+
 main #bckgr-h1 {
     grid-area: 1/1/2/13;
     background-image: linear-gradient(0deg, rgba(255, 183, 0, 0.2), rgba(255, 183, 0, 0.3)), url("./jelena-ardila-vetrovec-OUXJcmQSzdE-unsplash.jpg");
@@ -110,7 +105,6 @@ main #bckgr-h1 {
 
 #bckgr-h1 h1{
     background-color:#ffb700;
-
 }
 
 #turniri {
@@ -118,6 +112,8 @@ main #bckgr-h1 {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 #turniri h2 {
@@ -126,27 +122,43 @@ main #bckgr-h1 {
 }
 
 #turniru-tab {
-    
     border: 2px dotted #ffb700;
     display: flex;
     flex-flow: column;
+    width: 50%;
 }
 
 td, th {
     
-    border: 1px dotted grey;
+    text-align: center;
+    padding: 0 1%;
+    
 }
 
+tr {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.first-col {
+    min-width: 120px;
+}
 
 thead {
     background-color: #ffb700;
     color: white;
+    width: 100%;
 }
 
 tbody {
-    
     height: 30vh;
     overflow-y: scroll;
+    width: 100%;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ffb700;
 }
 
 
@@ -155,10 +167,12 @@ tbody {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    justify-content: center;
 }
 
 #tryout p {
     padding-bottom: 1%;
+    text-align: center;
 }
 
 h2 {
@@ -167,22 +181,76 @@ h2 {
 }
 
 #gallery {
-    grid-area: 4/1/9/13;
+    grid-area: 4/1/8/13;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    width: 100%;
+}
+
+#gallery .tournament-div {
+    width: 100%;
+    height: 100%;
 }
 
 #gallery h2 {
     padding: 1% 0;
 }
 
+#gallery h3 {
+    padding: 1% 0;
+    text-align: center;
+}
+
+.img-gallery {
+    width: 100%;
+    height: 45vh;
+    object-fit: contain;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.img-gallery #main-pic, #main-pic2 {
+    grid-area: 1/1/10/13;
+    margin: 0 auto;
+}
+
+#main-pic img, #main-pic2 img {
+    height: 100%;
+    width: auto;
+}
+
+.scrollable {
+    grid-area: 10/4/11/10;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: rgba(236, 236, 236, 0.35);
+}
+
+.single-image {
+    position: relative;
+    width: 15vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.single-image img {
+    width: 10vh;
+    height: 10vh;
+    object-fit: contain;    
+}
+
 main footer {
-    grid-area: 9/1/11/13;
+    grid-area: 8/1/9/13;
 }
 
 #map {
-    height: 100%;
+    height: 25vh;
     /* The height is 400 pixels */
     width: 60%;
     /* The width is the width of the web page */
