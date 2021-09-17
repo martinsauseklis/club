@@ -109,7 +109,8 @@ main #bckgr-h1 {
     grid-area: 1/1/2/13;
     background-image: linear-gradient(0deg, rgba(255, 183, 0, 0.2), rgba(255, 183, 0, 0.3)), url("./jelena-ardila-vetrovec-OUXJcmQSzdE-unsplash.jpg");
     background-position:center;
-    background-size: cover;
+    background-size:cover;
+   
     color: white;
     height: 30vh;
     display: flex;
@@ -273,11 +274,12 @@ h2 {
     width: 15vh;
     height: auto;
     display: flex;
+    
     justify-content: center;
 }
 .single-image img {
-    width: 10vh;
-    height: 10vh;
+    width: 95%;
+    height: 95%;
     object-fit: contain;    
 }
 
