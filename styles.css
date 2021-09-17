@@ -3,14 +3,13 @@
     padding: 0;
     font-family: 'Titillium Web', sans-serif;
     
+    
 }
 
 html {
     height: 100%;
     width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    
 }
 
 body {
@@ -391,8 +390,9 @@ footer li a:hover {
         display: block;
         width: 10%;
         object-fit: contain;
+        margin-right: 3%;
         
-        margin-right: 1%;
+        
 
         align-self: center;
     }
