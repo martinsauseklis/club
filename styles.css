@@ -141,7 +141,8 @@ main #bckgr-h1 {
     border: 2px dotted #ffb700;
     display: flex;
     flex-flow: column;
-    width: 50%;
+    min-width: 50%;
+    flex-shrink: 1.5;
 }
 
 td, th {
@@ -386,7 +387,7 @@ footer li a:hover {
     #hamburger {
         display: block;
         width: 10%;
-        height: 90%;
+        object-fit: contain;
         
         margin-right: 1%;
 
